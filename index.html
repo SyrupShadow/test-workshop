@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene background="#00000000">
+        <a-assets>
+            <a-asset-item id="model" src="DamagedHelmet.glb" response-type="arraybuffer"></a-asset-item>
+        </a-assets>
+        
+        <a-entity gltf-model="#model" scale = "15 15 15" position="0 0 -10"></a-entity>  
+            <a-camera>
+                <a-cursor material="color: #FFF; shader: flat;"></a-cursor>
+            </a-camera>
+    </a-scene>    
+</body>
+</html>
